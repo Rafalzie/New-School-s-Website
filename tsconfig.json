@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "components/*": ["./app/components/*"],
+      "UIcomponents/*": ["./app/UIcomponents/*"],
+      "globalStyles/*": ["./app/globalStyles/*"],
+      "hooks/*": ["./app/hooks/*"],
+      "pages/*": ["./app/pages/*"],
+      "serverActions/*": ["./app/serverActions/*"],
+      "assets/*": ["./app/assets/*"],
+      "models/*": ["./app/models/*"],
+      "providers/*": ["./app/providers/*"],
+      "types/*": ["./types/*"],
+      "utils/*": ["./app/utils/*"]
+    },
+    "target": "ES2017"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/userInfoCards"
+  ],
+  "exclude": ["node_modules"]
+}
