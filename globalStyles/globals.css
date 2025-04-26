@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Display", sans-serif;
+}
+
+div,
+p,
+li {
+  font-size: 14px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-size: 18px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+  }
+}
+
+/* Color Palette Definitions */
+:root {
+  /* NEW VERSION OF THE COLORS */
+
+  /* Primary Colors */
+  --primary-default: #007aff;
+  --primary-light-grey: #fafafa;
+  --primary-light-blue: #e8f3ff;
+  --primary-white: #ffffff;
+  /* General Borders */
+  --primary-border: #dfe3e7;
+
+  /* Secondary Colors */
+  --secondary-dark: #0c0e12;
+  --secondary-light-300: #8e92bc;
+  --secondary-light-200: #dfe3e7;
+  --secondary-light-100: #e8f3ff;
+
+  /* Tags */
+  --grade-text: var(--primary-white);
+  --grade-bg: var(--primary-default);
+
+  --review-text: var(--primary-white);
+  --review-bg: var(--primary-default);
+
+  --fail-text: #ff4423;
+  --fail-bg: #ffece9;
+  --fail-border: #ffccc3;
+
+  --pass-text: #17990d;
+  --pass-bg: #e8f5e7;
+  --pass-border: #c4e8c1;
+
+  --due-text: #007aff;
+  --due-bg: #e8f3ff;
+  --due-border: #c7d7fe;
+
+  --waiting-text: #fba700;
+  --waiting-bg: #fff7d9;
+  --waiting-border: #feee95;
+
+  /* Cards Border */
+  --card-border: var(--secondary-light-200);
+}
+
+.dark-mode {
+  /* Primary Colors */
+  --primary-default: #007aff;
+  --primary-light-grey: #0c0e12;
+  --primary-light-blue: #232a32;
+  --primary-white: #1b1c20;
+
+  /* General Borders */
+  --primary-border: #373a41;
+
+  /* Secondary Colors */
+  --secondary-dark: #ffffff;
+  --secondary-light-300: #8e92bc;
+  --secondary-light-200: #dfe3e7;
+  --secondary-light-100: #e8f3ff;
+
+  --fail-text: #fda29b;
+  --fail-bg: #55160c;
+  --fail-border: #912018;
+
+  --pass-text: #73e2a3;
+  --pass-border: #095c37;
+  --pass-bg: #052e1c;
+
+  --due-text: #84caff;
+  --due-bg: #102a56;
+  --due-border: #546fff;
+
+  --waiting-text: #fde272;
+  --waiting-bg: #a15c07;
+  --waiting-border: #854a0e;
+
+  /* Cards Border */
+  --card-border: var(--primary-border);
+
+  /* Font Weights */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+
+  /* WE ARE NOT USING THESE COLORS */
+
+  --primary-black-100: #000000; /* 100% */
+  --primary-black-60: #666666; /* 60% */
+  --primary-black-30: #b3b3b3; /* 30% */
+  --primary-black-10: #e6e6e6; /* 10% */
+
+  /* Theme Colors */
+  --theme-module3-100: #6563eb; /* 100% */
+  --theme-module3-60: #a3a1f3; /* 60% */
+  --theme-module3-30: #d1d1f9; /* 30% */
+  --theme-module3-10: #f0f0fd; /* 10% */
+  --theme-module3-hover: #2c2b76; /* hover */
+
+  /* Error Message Colors */
+  --error-success-100: #84cf6e; /* 100% */
+  --error-success-60: #b5e2a8; /* 60% */
+  --error-success-30: #dbf1d4; /* 30% */
+  --error-success-10: #ffffff; /* 10% */
+
+  --error-failure-100: #f55f5b; /* 100% */
+  --error-failure-60: #f99f9d; /* 60% */
+  --error-failure-30: #fccfce; /* 30% */
+  --error-failure-10: #feefef; /* 10% */
+
+  --error-warning-100: #fea65b; /* 100% */
+  --error-warning-60: #feca9d; /* 60% */
+  --error-warning-30: #ffe5ce; /* 30% */
+  --error-warning-10: #fff7ef; /* 10% */
+}
